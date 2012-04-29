@@ -1,24 +1,18 @@
-# Omniauth::Hatena
+# Omniauth Hatena
 
-TODO: Write a gem description
+A Strategy to auth with Hatena in OmniAuth.
+
+Get your ConsumerKey here:http://developer.hatena.ne.jp/ja/documents/auth/apis/oauth/consumer
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your app's `Gemfile`:
 
     gem 'omniauth-hatena'
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install omniauth-hatena
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
