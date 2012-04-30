@@ -41,7 +41,7 @@ module OmniAuth
 
       def request_phase
         params = (options.scope || '').split(',').map(&:strip)
-        options.request_params[:scope] = params.push(DEFAULT_SCOPE).join(',')
+        options.request_params[:scope] = params.push(DEFAULT_SCOPE).uniq.join(',')
 
         old_request_phase
       end
