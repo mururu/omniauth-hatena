@@ -16,13 +16,13 @@ module OmniAuth
         :authorize_url     => 'https://www.hatena.ne.jp/oauth/authorize'
       }
 
-      uid { raw_info[:url_name] }
+      uid { raw_info['url_name'] }
 
       info do
         {
-          :name     => raw_info[:url_name],
-          :nickname => raw_info[:display_name],
-          :image    => raw_info[:profile_image_url],
+          :name     => raw_info['url_name'],
+          :nickname => raw_info['display_name'],
+          :image    => raw_info['profile_image_url'],
           :urls     => { 'Hatena' => 'http://www.hatena.ne.jp/' + raw_info['url_name'] }
         }
       end
