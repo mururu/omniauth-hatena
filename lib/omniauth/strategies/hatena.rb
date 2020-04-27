@@ -11,8 +11,8 @@ module OmniAuth
       option :name, 'hatena'
       option :authorize_options, [:scope]
       option :client_options, {
-        :request_token_url => 'https://www.hatena.com/oauth/initiate',
-        :access_token_url  => 'https://www.hatena.com/oauth/token',
+        :request_token_url => 'https://www.hatena.ne.jp/oauth/initiate',
+        :access_token_url  => 'https://www.hatena.ne.jp/oauth/token',
         :authorize_url     => 'https://www.hatena.ne.jp/oauth/authorize'
       }
 
@@ -32,7 +32,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= MultiJson.load(access_token.get('http://n.hatena.com/applications/my.json').body)
+        @raw_info ||= MultiJson.load(access_token.get('https://n.hatena.ne.jp/applications/my.json').body)
       rescue ::Errno::ETIMEDOUT
         raise ::Timeout::Error
       end
