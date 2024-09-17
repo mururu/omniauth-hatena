@@ -16,8 +16,8 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = OmniAuth::Hatena::VERSION
 
-  gem.add_dependency 'multi_json', '~> 1.3'
-  gem.add_runtime_dependency 'omniauth-oauth', '~> 1.0'
-  gem.add_development_dependency 'rspec', '~> 2.9'
-  gem.add_development_dependency 'rake', '~> 0.9.2.2'
+  gem.add_dependency 'multi_json'
+  gem.add_runtime_dependency 'omniauth-oauth'
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'rake'
 end
